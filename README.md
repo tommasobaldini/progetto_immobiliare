@@ -1,7 +1,7 @@
 # Progetto Immobiliare: Previsione del Prezzo delle Case
 
 ## Descrizione
-Questo progetto sviluppa 3 modelli di regressione XGBoost per predire il prezzo al metro quadro di immobili nella regione di Sindian, Nuova Taipei, Taiwan, utilizzando diversi 3 diversi subsets del Real Estate Valuation Data Set.  
+Questo progetto sviluppa 3 modelli di regressione XGBoost per predire il prezzo al metro quadro di immobili nella regione di Sindian, Nuova Taipei, Taiwan, utilizzando 3 diversi subsets del Real Estate Valuation Data Set.  
 Successivamente, crea una web app con Streamlit che permette agli utenti di ottenere una stima del prezzo inserendo:
 
 • Latitudine e longitudine, oppure
