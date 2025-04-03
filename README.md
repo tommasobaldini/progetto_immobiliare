@@ -10,6 +10,45 @@ Successivamente, crea una web app con Streamlit che permette agli utenti di otte
 
 • Tutte queste caratteristiche
 
+## Il Dataset
+Il dataset utilizzato per questo progetto è composto da 414 righe e 8 colonne. Di seguito è riportata una breve descrizione delle colonne:
+• No:   
+    Tipo: int64
+    Descrizione: Identificativo univoco per ogni riga.
+
+• X1 transaction date:
+    Tipo: float64
+    Descrizione: Data della transazione immobiliare (necessario preprocessing se utilizzata per addestramento).
+
+• X2 house age:
+    Tipo: float64
+    Descrizione: Età dell'immobile in anni.
+
+• X3 distance to the nearest MRT station:
+    Tipo: float64
+    Descrizione: Distanza dalla stazione MRT più vicina.
+
+• X4 number of convenience stores:
+    Tipo: int64
+    Descrizione: Numero di minimarket o negozi di convenienza nelle vicinanze.
+
+• X5 latitude:
+    Tipo: float64
+    Descrizione: Latitudine della posizione dell'immobile.
+
+• X6 longitude:
+    Tipo: float64
+    Descrizione: Longitudine della posizione dell'immobile.
+
+• Y house price of unit area:
+    Tipo: float64
+    Descrizione: Prezzo per unità di superficie dell'immobile (ad esempio, il prezzo al metro quadrato).
+
+•  Sommario:
+Totale righe: 414.
+Totale colonne: 8.
+Tipo di Dati: 6 colonne di tipo float64 e 2 colonne di tipo int64.
+Valori Mancanti: Non ci sono valori mancanti nel dataset.
 
 ## Struttura del Progetto
 Il progetto è organizzato come segue:
