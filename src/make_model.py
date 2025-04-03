@@ -14,8 +14,7 @@ import logging
 
 def load_data():
     """Carica il dataset e crea i sottoinsiemi di variabili."""
-    file_path = r{DATA_PATH}
-    df = pd.read_excel(file_path, engine="openpyxl")
+    df = pd.read_excel(DATASET_PATH, engine="openpyxl")
 
     # Rinomina delle colonne
     df.columns = [

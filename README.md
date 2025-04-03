@@ -1,1 +1,45 @@
-# progetto_immobiliare
+# Progetto Immobiliare: Previsione del Prezzo delle Case
+
+## Descrizione
+Questo progetto sviluppa 3 modelli di regressione XGBoost per predire il prezzo al metro quadro di immobili nella regione di Sindian, Nuova Taipei, Taiwan, utilizzando diversi 3 diversi subsets del Real Estate Valuation Data Set.
+Successivamente, crea una web app con Streamlit che permette agli utenti di ottenere una stima del prezzo inserendo:
+
+• Latitudine e longitudine, oppure
+
+• Età dell’immobile, distanza dalla stazione MRT più vicina e numero di minimarket nelle vicinanze oppure
+
+• Tutte queste caratteristiche
+
+
+## Struttura del Progetto
+Il progetto è organizzato come segue:
+
+progetto_immobiliare/
+├── data/ # Contiene il dataset utilizzato per l'analisi 
+├── scripts/ # Script per l'esecuzione della pipeline
+├── src/ # Contiene i codici per l'addestramento dei modelli e lo sviluppo della web app
+├── logs/ # Log delle operazioni e pipeline 
+├── MODEL/ # Contiene i modelli pre-allenati 
+├── README.md # Questo file
+
+## Tuning del modello XGBoost
+Il codice implementa una fase di tuning degli iperparametri utilizzando Grid Search per ottimizzare le prestazioni del modello XGBoost. La ricerca esaustiva esplora una griglia di possibili valori per i parametri chiave del modello, come il numero di alberi (n_estimators), il tasso di apprendimento (learning_rate) e la profondità massima degli alberi (max_depth). Questo processo mira a identificare la combinazione di iperparametri che massimizza la performance del modello, utilizzando la tecnica della cross-validation per garantire una stima robusta delle sue capacità predittive.
+
+
+## Istruzioni per eseguire l'applicazione
+Per eseguire l'applicazione, segui i passaggi descritti di seguito.
+
+1. **Esegui il file `UI.py`**:
+    Dopo aver configurato il tuo ambiente e installato le dipendenze, il file principale da eseguire è `UI.py`. Per avviare l'applicazione, apri il terminale e naviga nella cartella contenente il file, quindi esegui il comando:
+
+    ```bash
+    streamlit run UI.py
+    ```
+
+2. **Interagisci con l'applicazione**:
+    Una volta aperto il browser, inserisci i dati richiesti (ad esempio, latitudine, longitudine, ecc.) per ottenere le previsioni dei modelli XGBoost.
+
+ **Verifica dei valori inseriti**:
+    - L'applicazione esegue una validazione dei dati inseriti dall'utente. I valori immessi (come latitudine, longitudine, età dell’immobile, distanza dalla stazione MRT, ecc.) devono rientrare nei limiti minimi e massimi che ciascuna variabile assume nel dataset di addestramento.
+    - Se i valori inseriti sono fuori da questi intervalli, l'applicazione mostrerà un messaggio di errore, avvisando l'utente di correggere i dati in modo che siano compatibili con il dataset originale.
+

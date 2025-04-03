@@ -2,13 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 import os
+from config import DATASET_PATH
 
 # Percorso della cartella modelli
 MODEL_PATH = "../MODEL/"
 
-# Carica il dataset per ottenere i limiti delle variabili
-file_path = r"C:\Users\utente\Desktop\uni\3\sistemi informativi\pratica\progetto_immobiliare\data\Real estate valuation data set.xlsx"
-df = pd.read_excel(file_path, engine="openpyxl")
+df = pd.read_excel(DATASET_PATH, engine="openpyxl")
 
 # Rinomina delle colonne
 df.columns = [
