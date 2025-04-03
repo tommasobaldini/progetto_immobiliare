@@ -1,0 +1,6 @@
+2025-04-03 17:26:06,205 - INFO - Starting Pipeline...
+2025-04-03 17:26:06,205 - INFO - Training the models...
+2025-04-03 17:26:07,349 - INFO - Modello XGBoost per Latitudine e Longitudine addestrato e salvato con successo.
+2025-04-03 17:26:07,496 - INFO - Modello XGBoost per Altre Variabili addestrato e salvato con successo.
+2025-04-03 17:26:07,617 - INFO - Modello XGBoost per Tutte le Variabili addestrato e salvato con successo.
+2025-04-03 17:26:07,617 - INFO - Pipeline completed successfully.
