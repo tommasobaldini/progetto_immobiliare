@@ -107,3 +107,41 @@ Per eseguire l'applicazione, segui i passaggi descritti di seguito.
     - L'applicazione esegue una validazione dei dati inseriti dall'utente.   I valori immessi (come latitudine, longitudine, età dell’immobile, distanza dalla stazione MRT, ecc.) devono rientrare nei limiti minimi e massimi che ciascuna variabile assume nel dataset di addestramento.  
     - Se i valori inseriti sono fuori da questi intervalli, l'applicazione mostrerà un messaggio di errore, avvisando l'utente di correggere i dati in modo che siano compatibili con il dataset originale.
 
+  
+## Visualizzazione dati con Tableau
+Sono state realizzate 2 dashboard contenenti 4 grafici per la visualizzazione dei dati con Tableau
+link Tableau:    
+- dashboard 1 (grafico 1 e 2) : *https://public.tableau.com/views/ProgettoImmobiliare/Dashboard1?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link*       
+- dashboard 2 (grafico 3 e 4) : *https://public.tableau.com/views/ProgettoImmobiliare2/Dashboard2?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link*        
+
+
+**Grafico 1: Heatmap per Prezzo della Casa**  
+Questo grafico rappresenta una heatmap che visualizza la distribuzione spaziale del prezzo delle case per unità di area. 
+L'intensità del colore rappresenta il prezzo al metro quadro, permettendo una rapida identificazione delle aree più e meno costose.  
+
+**Grafico 2: Distribuzione Geografica dei Cluster**  
+Le case sono state raggruppate in cluster sulla base di : prezzo al metro quadrato, età, distanza dalla stazione MTR, numero di minimarket nelle vicinanze.  
+Questo grafico mostra la distribuzione geografica dei cluster di case. I dati sono suddivisi in tre cluster principali:  
+
+*Cluster 1 - "Centro città"*: Immobili in zone centrali, con molti servizi nelle vicinanze, case più vecchie, e un prezzo molto elevato.  
+*Cluster 2 - "Case moderne"*: Immobili relativamente nuovi, con meno servizi nelle vicinanze, e un prezzo medio.  
+*Cluster 3 - "Case periferiche"*: Immobili più vecchi, con pochi servizi nelle vicinanze, e un prezzo basso.  
+
+Ogni cluster è rappresentato con un colore specifico e la mappa permette di esplorare la distribuzione geografica delle case in base a queste caratteristiche.
+
+**Grafico 3: Distribuzione Geografica per Prezzo e Età della Casa**  
+Questo grafico combina la distribuzione geografica con due variabili: prezzo della casa (dimensione dei punti) e età della casa (colore dei punti).   
+I punti più grandi rappresentano immobili con un prezzo più alto, mentre i colori più scuri indicano case più vecchie. Questa visualizzazione aiuta a capire come il prezzo e l'età delle case siano distribuiti geograficamente.
+
+
+**Grafico 4: Grafici a Dispersione per Prezzo**  
+Questa sezione include tre grafici a dispersione, ognuno dei quali esplora la relazione tra il prezzo della casa e una delle seguenti variabili:
+- Età della casa   
+- Distanza dalla stazione metro più vicina  
+- Numero di minimarket nelle vicinanze  
+  
+Ogni grafico presenta il prezzo della casa sull'asse delle ordinate e una delle variabili sopra menzionate sull'asse delle ascisse.
+
+
+
+
