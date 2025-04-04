@@ -10,6 +10,8 @@ Successivamente, crea una web app con Streamlit che permette agli utenti di otte
 
 • __Tutte le caratteristiche sopra elencate__
 
+Inoltre sono state realizzate 2 dashboard con Tableau per la visualizzazione dei dati del dataset.
+
 ## Il Dataset
 Il dataset utilizzato per questo progetto è composto da 414 righe e 8 colonne. Di seguito è riportata una breve descrizione delle colonne:
 
