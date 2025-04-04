@@ -1,14 +1,14 @@
-# Progetto Immobiliare: Previsione del Prezzo delle Case
+# 🏠📈 Smart Pricing: Modelli Predittivi per la Valutazione Immobiliare
 
 ## Descrizione
 Questo progetto sviluppa 3 modelli di regressione XGBoost per predire il prezzo al metro quadro di immobili nella regione di Sindian, Nuova Taipei, Taiwan, utilizzando 3 diversi subsets del Real Estate Valuation Data Set.  
 Successivamente, crea una web app con Streamlit che permette agli utenti di ottenere una stima del prezzo inserendo:
 
-• Latitudine e longitudine, oppure
+• __Latitudine__ e __longitudine__, oppure
 
-• Età dell’immobile, distanza dalla stazione MRT più vicina e numero di minimarket nelle vicinanze oppure
+• __Età dell’immobile__, __distanza dalla stazione MRT più vicina__ e __numero di minimarket nelle vicinanze__ oppure
 
-• Tutte queste caratteristiche
+• __Tutte le caratteristiche sopra elencate__
 
 ## Il Dataset
 Il dataset utilizzato per questo progetto è composto da 414 righe e 8 colonne. Di seguito è riportata una breve descrizione delle colonne:
