@@ -55,12 +55,28 @@ Valori Mancanti: Non ci sono valori mancanti nel dataset.
 Il progetto è organizzato come segue:
 
 progetto_immobiliare/  
-├── data/             # Contiene il dataset utilizzato per l'analisi  
-├── scripts/          # Script per l'esecuzione della pipeline  
-├── src/              # Contiene i codici per l'addestramento dei modelli e lo sviluppo della web app  
-├── logs/             # Log delle operazioni e pipeline  
-├── MODEL/            # Contiene i modelli pre-allenati  
-├── README.md         # Questo file  
+│  
+├── *data*/  
+│   └── Real estate valuation data set.xlsx  # Il dataset utilizzato per il training dei modelli    
+│  
+├── *scripts*/  
+│   ├── run_pipeline.py  # Script principale per eseguire la pipeline  
+│   ├── make_model.py  # Script per la creazione dei modelli  
+│   ├── UI.py  # Interfaccia utente con Streamlit  
+│   ├── __init__.py  # File di inizializzazione  
+│   └── config.py  # Configurazione per la pipeline e i modelli  
+│  
+├── *MODEL*/    
+│       ├── XGBoost_LatLong.pickle # Modello addestrato su Latitudine e Longitudine  
+│       ├── XGBoost_Other.pickle # Modello addestrato su Età dell’immobile, distanza dalla stazione MRT più vicina, numero di minimarket nelle vicinanze     
+│       └── XGBoost_All.pickle # Modello addestrato su tutte e 5 le variabili    
+│      
+├── *logs*/    
+│   └── pipeline.log  # Log delle esecuzioni della pipeline      
+│      
+├── *README.md*  # Questo file  
+
+
 
 
 ## Tuning del modello XGBoost
