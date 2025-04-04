@@ -79,9 +79,16 @@ progetto_immobiliare/
 
 
 
-## Tuning del modello XGBoost
-Il codice implementa una fase di tuning degli iperparametri utilizzando Grid Search per ottimizzare le prestazioni del modello XGBoost. La ricerca esaustiva esplora una griglia di possibili valori per i parametri chiave del modello, come il numero di alberi (n_estimators), il tasso di apprendimento (learning_rate) e la profondità massima degli alberi (max_depth). Questo processo mira a identificare la combinazione di iperparametri che massimizza la performance del modello, utilizzando la tecnica della cross-validation per garantire una stima robusta delle sue capacità predittive.
+## Addestramento del modello Gradient Boosting
+La fase di preprocessing dei dati non è stata eseguita poiché, durante il controllo preliminare del dataset, si è riscontrato che non era necessaria.   
+Il modello XGBoost, in quanto algoritmo di tipo ensemble basato su alberi decisionali, non richiede trasformazioni come la standardizzazione o la normalizzazione delle variabili, risultando robusto rispetto alla scala e alla distribuzione dei dati.  
 
+Per ottimizzare le prestazioni dei 3 modelli, è stata implementata una fase di tuning degli iperparametri utilizzando Grid Search.   
+Questo processo mira a identificare la combinazione di iperparametri che massimizza la performance del modello (tunato su R^2), tra cui il numero di alberi (n_estimators), il tasso di apprendimento (learning_rate) e la profondità massima degli alberi (max_depth).  
+La selezione ottimale degli iperparametri è stata effettuata tramite cross-validation, garantendo una valutazione robusta della capacità predittiva del modello.  
+
+Questa strategia ha permesso di massimizzare le prestazioni dei modelli, migliorandone la generalizzazione sui dati di test e rendendoli più efficaci nella previsione dei prezzi immobiliari.  
+  
 
 ## Istruzioni per eseguire l'applicazione
 Per eseguire l'applicazione, segui i passaggi descritti di seguito.
